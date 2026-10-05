@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Essenza+ | Perfumes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="inicio.html" class="logo">
+        ESSENZA<span>+</span>
+    </a>
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Busque por perfume..."
+        >
+
+    </div>
+
+    <a href="carrinho.html" class="cart">
+
+        🛒 Carrinho
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </a>
+
+</header>
+
+<nav>
+
+    <a href="inicio.html">Início</a>
+    <a href="perfumes.html" class="active">Perfumes</a>
+    <a href="feminino.html">Feminino</a>
+    <a href="masculino.html">Masculino</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+
+</nav>
+
+<section class="page-title">
+
+    <span>NOSSA COLEÇÃO</span>
+
+    <h1>
+        Perfumes
+    </h1>
+
+    <p>
+        Encontre a fragrância perfeita
+        para cada momento.
+    </p>
+
+</section>
+
+<main class="catalog">
+
+    <div class="container">
+
+        <div class="filters">
+
+            <a href="perfumes.html" class="active">
+                Todos
+            </a>
+
+            <a href="feminino.html">
+                Feminino
+            </a>
+
+            <a href="masculino.html">
+                Masculino
+            </a>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <span class="badge">
+                        Floral
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+                        alt="Floral Elegance"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FEMININO</small>
+
+                    <h3>
+                        Floral Elegance
+                    </h3>
+
+                    <p>
+                        Fragrância floral delicada e elegante.
+                    </p>
+
+                    <strong class="price">
+                        R$ 129,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Floral-Elegance"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Floral Elegance',
+                                'Fragrância floral delicada e elegante.',
+                                129.90,
+                                'https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <span class="badge">
+                        Intenso
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85"
+                        alt="Urban Night"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>MASCULINO</small>
+
+                    <h3>
+                        Urban Night
+                    </h3>
+
+                    <p>
+                        Fragrância intensa e marcante.
+                    </p>
+
+                    <strong class="price">
+                        R$ 149,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Urban-Night"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Urban Night',
+                                'Fragrância masculina intensa e marcante.',
+                                149.90,
+                                'https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <span class="badge">
+                        Premium
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85"
+                        alt="Golden Essence"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>UNISSEX</small>
+
+                    <h3>
+                        Golden Essence
+                    </h3>
+
+                    <p>
+                        Sofisticado e envolvente.
+                    </p>
+
+                    <strong class="price">
+                        R$ 179,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Golden-Essence"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Golden Essence',
+                                'Uma fragrância sofisticada e envolvente.',
+                                179.90,
+                                'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=85"
+                        alt="Rose Velvet"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FEMININO</small>
+
+                    <h3>
+                        Rose Velvet
+                    </h3>
+
+                    <p>
+                        Notas florais com toque adocicado.
+                    </p>
+
+                    <strong class="price">
+                        R$ 139,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Rose-Velvet"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Rose Velvet',
+                                'Notas florais com toque adocicado e sofisticado.',
+                                139.90,
+                                'https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=900&q=85"
+                        alt="Black Intense"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>MASCULINO</small>
+
+                    <h3>
+                        Black Intense
+                    </h3>
+
+                    <p>
+                        Aroma forte e elegante para a noite.
+                    </p>
+
+                    <strong class="price">
+                        R$ 159,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Black-Intense"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Black Intense',
+                                'Aroma forte, elegante e perfeito para a noite.',
+                                159.90,
+                                'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1557170334-a9632e77c6e4?auto=format&fit=crop&w=900&q=85"
+                        alt="Pure Essence"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>UNISSEX</small>
+
+                    <h3>
+                        Pure Essence
+                    </h3>
+
+                    <p>
+                        Fragrância leve e moderna.
+                    </p>
+
+                    <strong class="price">
+                        R$ 119,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Pure-Essence"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Pure Essence',
+                                'Fragrância leve e moderna para todos os momentos.',
+                                119.90,
+                                'https://images.unsplash.com/photo-1557170334-a9632e77c6e4?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div
+            id="noResults"
+            class="empty"
+            style="display:none"
+        >
+            Nenhum perfume encontrado.
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-logo">
+        ESSENZA<span>+</span>
+    </div>
+
+    <p>
+        Perfumes que transformam momentos em memórias.
+    </p>
+
+    <div class="copyright">
+        © 2026 Essenza+. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>

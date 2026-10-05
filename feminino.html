@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Essenza+ | Feminino</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="inicio.html" class="logo">
+        ESSENZA<span>+</span>
+    </a>
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Busque por perfume..."
+        >
+
+    </div>
+
+    <a href="carrinho.html" class="cart">
+        🛒 Carrinho
+        <span id="cartCount">0</span>
+    </a>
+
+</header>
+
+<nav>
+
+    <a href="inicio.html">Início</a>
+    <a href="perfumes.html">Perfumes</a>
+    <a href="feminino.html" class="active">Feminino</a>
+    <a href="masculino.html">Masculino</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+
+</nav>
+
+<section class="page-title">
+
+    <span>ESSENZA+ FEMININO</span>
+
+    <h1>
+        Perfumes Femininos
+    </h1>
+
+    <p>
+        Fragrâncias delicadas, elegantes
+        e cheias de personalidade.
+    </p>
+
+</section>
+
+<main class="catalog">
+
+    <div class="container">
+
+        <div class="product-grid">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+                        alt="Floral Elegance"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FEMININO</small>
+
+                    <h3>
+                        Floral Elegance
+                    </h3>
+
+                    <p>
+                        Fragrância floral delicada e elegante.
+                    </p>
+
+                    <strong class="price">
+                        R$ 129,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Floral-Elegance"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Floral Elegance',
+                                'Fragrância floral delicada e elegante.',
+                                129.90,
+                                'https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=85"
+                        alt="Rose Velvet"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>FEMININO</small>
+
+                    <h3>
+                        Rose Velvet
+                    </h3>
+
+                    <p>
+                        Notas florais com toque adocicado.
+                    </p>
+
+                    <strong class="price">
+                        R$ 139,90
+                    </strong>
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Rose-Velvet"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            onclick="adicionarAoCarrinho(
+                                'Rose Velvet',
+                                'Notas florais com toque adocicado e sofisticado.',
+                                139.90,
+                                'https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-logo">
+        ESSENZA<span>+</span>
+    </div>
+
+    <p>
+        Perfumes que transformam momentos em memórias.
+    </p>
+
+    <div class="copyright">
+        © 2026 Essenza+. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>

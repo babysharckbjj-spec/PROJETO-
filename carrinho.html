@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Essenza+ | Carrinho</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="inicio.html" class="logo">
+        ESSENZA<span>+</span>
+    </a>
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Busque por perfume..."
+        >
+
+    </div>
+
+    <a href="carrinho.html" class="cart">
+
+        🛒 Carrinho
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </a>
+
+</header>
+
+<nav>
+
+    <a href="inicio.html">Início</a>
+    <a href="perfumes.html">Perfumes</a>
+    <a href="feminino.html">Feminino</a>
+    <a href="masculino.html">Masculino</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+
+</nav>
+
+<section class="page-title">
+
+    <span>ESSENZA+</span>
+
+    <h1>
+        Seu carrinho
+    </h1>
+
+    <p>
+        Confira seus produtos antes de finalizar.
+    </p>
+
+</section>
+
+<main class="cart-page">
+
+    <div class="container">
+
+        <div class="cart-layout">
+
+            <div class="cart-list" id="cartList">
+
+            </div>
+
+            <div class="summary">
+
+                <h2>
+                    Resumo
+                </h2>
+
+                <div class="summary-line">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="subtotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+                <div class="summary-line">
+
+                    <span>
+                        Frete
+                    </span>
+
+                    <strong>
+                        Grátis
+                    </strong>
+
+                </div>
+
+                <div class="summary-line summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="total">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+                <a
+                    href="pagamento.html"
+                    class="btn gold"
+                    style="width:100%;text-align:center;margin-top:20px"
+                >
+                    Ir para pagamento
+                </a>
+
+                <button
+                    class="btn light"
+                    onclick="limparCarrinho()"
+                    style="width:100%;margin-top:10px"
+                >
+                    Limpar carrinho
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-logo">
+        ESSENZA<span>+</span>
+    </div>
+
+    <p>
+        Perfumes que transformam momentos em memórias.
+    </p>
+
+    <div class="copyright">
+        © 2026 Essenza+. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>

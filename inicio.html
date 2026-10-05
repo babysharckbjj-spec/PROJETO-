@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Essenza+ | Início</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="inicio.html" class="logo">
+        ESSENZA<span>+</span>
+    </a>
+
+    <div class="search">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Busque por perfume..."
+            autocomplete="off"
+        >
+    </div>
+
+    <a href="carrinho.html" class="cart">
+        🛒 Carrinho
+        <span id="cartCount">0</span>
+    </a>
+
+</header>
+
+
+<nav>
+
+    <a href="inicio.html" class="active">
+        Início
+    </a>
+
+    <a href="perfumes.html">
+        Perfumes
+    </a>
+
+    <a href="feminino.html">
+        Feminino
+    </a>
+
+    <a href="masculino.html">
+        Masculino
+    </a>
+
+    <a href="sobre.html">
+        Sobre nós
+    </a>
+
+    <a href="contato.html">
+        Contato
+    </a>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            ESSENZA+ COLLECTION
+        </span>
+
+        <h1>
+            Sua essência.
+            <br>
+            Sua fragrância.
+        </h1>
+
+        <p>
+            Descubra perfumes marcantes,
+            sofisticados e feitos para deixar
+            sua presença inesquecível.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="perfumes.html"
+                class="btn gold"
+            >
+                Comprar agora
+            </a>
+
+            <a
+                href="#destaques"
+                class="hero-link"
+            >
+                Explorar coleção →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home-section container">
+
+    <div class="section-title">
+
+        <span>
+            ENCONTRE SEU ESTILO
+        </span>
+
+        <h2>
+            Escolha sua fragrância
+        </h2>
+
+        <p>
+            Perfumes selecionados para
+            diferentes personalidades e momentos.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a
+            href="feminino.html"
+            class="category-card feminino"
+        >
+
+            <div class="category-content">
+
+                <span>
+                    ESSENZA+
+                </span>
+
+                <h3>
+                    Feminino
+                </h3>
+
+                <p>
+                    Delicadeza, elegância
+                    e personalidade.
+                </p>
+
+                <b>
+                    Explorar →
+                </b>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="masculino.html"
+            class="category-card masculino"
+        >
+
+            <div class="category-content">
+
+                <span>
+                    ESSENZA+
+                </span>
+
+                <h3>
+                    Masculino
+                </h3>
+
+                <p>
+                    Presença, força
+                    e sofisticação.
+                </p>
+
+                <b>
+                    Explorar →
+                </b>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="perfumes.html"
+            class="category-card unissex"
+        >
+
+            <div class="category-content">
+
+                <span>
+                    ESSENZA+
+                </span>
+
+                <h3>
+                    Unissex
+                </h3>
+
+                <p>
+                    Fragrâncias que
+                    combinam com você.
+                </p>
+
+                <b>
+                    Explorar →
+                </b>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<section
+    class="featured"
+    id="destaques"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                MAIS DESEJADOS
+            </span>
+
+            <h2>
+                Perfumes em destaque
+            </h2>
+
+            <p>
+                Conheça algumas das fragrâncias
+                favoritas da Essenza+.
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUTO 1 -->
+
+            <article class="product-card">
+
+                <a href="detalhes.html?produto=Floral-Elegance">
+
+                    <div class="product-img">
+
+                        <span class="badge">
+                            ESSENZA+
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85"
+                            alt="Floral Elegance"
+                        >
+
+                    </div>
+
+                </a>
+
+
+                <div class="product-info">
+
+                    <small>
+                        FEMININO
+                    </small>
+
+                    <h3>
+                        Floral Elegance
+                    </h3>
+
+                    <p>
+                        Fragrância floral delicada
+                        e elegante.
+                    </p>
+
+                    <span class="price">
+                        R$ 129,90
+                    </span>
+
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Floral-Elegance"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            type="button"
+                            onclick="adicionarAoCarrinho(
+                                'Floral Elegance',
+                                'Fragrância floral delicada e elegante.',
+                                129.90,
+                                'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 2 -->
+
+            <article class="product-card">
+
+                <a href="detalhes.html?produto=Urban-Night">
+
+                    <div class="product-img">
+
+                        <span class="badge">
+                            ESSENZA+
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85"
+                            alt="Urban Night"
+                        >
+
+                    </div>
+
+                </a>
+
+
+                <div class="product-info">
+
+                    <small>
+                        MASCULINO
+                    </small>
+
+                    <h3>
+                        Urban Night
+                    </h3>
+
+                    <p>
+                        Fragrância intensa e
+                        marcante.
+                    </p>
+
+                    <span class="price">
+                        R$ 149,90
+                    </span>
+
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Urban-Night"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            type="button"
+                            onclick="adicionarAoCarrinho(
+                                'Urban Night',
+                                'Fragrância intensa e marcante.',
+                                149.90,
+                                'https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 3 -->
+
+            <article class="product-card">
+
+                <a href="detalhes.html?produto=Golden-Essence">
+
+                    <div class="product-img">
+
+                        <span class="badge">
+                            ESSENZA+
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+                            alt="Golden Essence"
+                        >
+
+                    </div>
+
+                </a>
+
+
+                <div class="product-info">
+
+                    <small>
+                        UNISSEX
+                    </small>
+
+                    <h3>
+                        Golden Essence
+                    </h3>
+
+                    <p>
+                        Uma fragrância sofisticada
+                        e envolvente.
+                    </p>
+
+                    <span class="price">
+                        R$ 179,90
+                    </span>
+
+
+                    <div class="product-actions">
+
+                        <a
+                            href="detalhes.html?produto=Golden-Essence"
+                            class="btn light"
+                        >
+                            Detalhes
+                        </a>
+
+                        <button
+                            class="btn"
+                            type="button"
+                            onclick="adicionarAoCarrinho(
+                                'Golden Essence',
+                                'Uma fragrância sofisticada e envolvente.',
+                                179.90,
+                                'https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85'
+                            )"
+                        >
+                            🛒 Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="see-all">
+
+            <a
+                href="perfumes.html"
+                class="btn light"
+            >
+                Ver todos os perfumes →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="benefits">
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            🚚
+        </div>
+
+        <div>
+
+            <h3>
+                Envio rápido
+            </h3>
+
+            <p>
+                Receba seu pedido
+                com segurança.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            ✨
+        </div>
+
+        <div>
+
+            <h3>
+                Qualidade
+            </h3>
+
+            <p>
+                Fragrâncias selecionadas
+                para você.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            🔒
+        </div>
+
+        <div>
+
+            <h3>
+                Compra segura
+            </h3>
+
+            <p>
+                Seus dados protegidos
+                durante a compra.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            💎
+        </div>
+
+        <div>
+
+            <h3>
+                Experiência premium
+            </h3>
+
+            <p>
+                Mais que um perfume,
+                uma experiência.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home-cta">
+
+    <h2>
+        Uma fragrância pode
+        dizer muito sobre você.
+    </h2>
+
+    <p>
+        Descubra a coleção Essenza+
+        e encontre o perfume que combina
+        com sua personalidade.
+    </p>
+
+    <a
+        href="perfumes.html"
+        class="btn gold"
+    >
+        Explorar perfumes
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ESSENZA<span>+</span>
+    </div>
+
+    <p>
+        Perfumes que transformam
+        momentos em memórias.
+    </p>
+
+    <div class="copyright">
+        © 2026 Essenza+.
+        Todos os direitos reservados.
+    </div>
+
+</footer>
+
+
+<script src="codigo.js"></script>
+
+</body>
+</html>

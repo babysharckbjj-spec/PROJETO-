@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Essenza+ | Contato</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="inicio.html" class="logo">
+        ESSENZA<span>+</span>
+    </a>
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Busque por perfume..."
+        >
+
+    </div>
+
+    <a href="carrinho.html" class="cart">
+
+        🛒 Carrinho
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </a>
+
+</header>
+
+<nav>
+
+    <a href="inicio.html">Início</a>
+    <a href="perfumes.html">Perfumes</a>
+    <a href="feminino.html">Feminino</a>
+    <a href="masculino.html">Masculino</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html" class="active">Contato</a>
+
+</nav>
+
+<section class="page-title">
+
+    <span>FALE CONOSCO</span>
+
+    <h1>
+        Entre em contato
+    </h1>
+
+    <p>
+        Estamos aqui para ajudar você.
+    </p>
+
+</section>
+
+<main class="container">
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>
+                📧 E-mail
+            </h3>
+
+            <p>
+                contato@essenzamais.com
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>
+                📱 Telefone
+            </h3>
+
+            <p>
+                (31) 99999-9999
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>
+                📍 Endereço
+            </h3>
+
+            <p>
+                Belo Horizonte - MG
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>
+                🕐 Atendimento
+            </h3>
+
+            <p>
+                Segunda a sexta, das 9h às 18h.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="form-box">
+
+        <form id="contactForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="contactName">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="contactEmail">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group full">
+
+                    <label for="contactMessageText">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="contactMessageText"
+                        required
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn gold"
+            >
+                Enviar mensagem
+            </button>
+
+            <p
+                id="contactMessage"
+                class="form-message"
+            ></p>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-logo">
+        ESSENZA<span>+</span>
+    </div>
+
+    <p>
+        Perfumes que transformam momentos em memórias.
+    </p>
+
+    <div class="copyright">
+        © 2026 Essenza+. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>
